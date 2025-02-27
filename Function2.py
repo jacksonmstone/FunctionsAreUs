@@ -3,7 +3,7 @@
 
 # Display of menu and return choice. Store in variable and use this value to determine which function to call next.
 def second():
-    print(f' Ok, {sUserName}, What would you like to do? (Input 1, 2, or 3)')
+    print(f' Ok, {player_name}, What would you like to do? (Input 1, 2, or 3)')
     bContinue = True
     
     while True:
