@@ -1,6 +1,7 @@
 #this is the source code of the soccer app
 
 import random
+from FunctionsAreUs import *
 #stat it off with a list
 allgames = []
 hometeam = input("what is the Home Team name? ").upper()
@@ -54,9 +55,9 @@ for icount in range(gamecount):
 
 #print the seasons game results
 print('\n\n')
-for icount in range(gamecount):
-    print (f"{allgames[icount]['AwayTeam']}'s score:{allgames[icount]['Score']} {hometeam}'s score:{allgames[icount]['HomeScore']} {allgames[icount]['winorloss']} ")
 
+#5. Display the final record for a team. Receive the home team data and display information.
+display_record(gamecount, allgames, hometeam)
 #print season total results
 print(f'\nThe final season record was {wincount} - {losscount}')
 
@@ -73,4 +74,6 @@ if losscount > 0:
         print("You had a good season!")
     else:
         print("Your Team needs practice!")
+
+
 
