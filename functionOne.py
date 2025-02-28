@@ -11,24 +11,32 @@ def intro() :
     print("Hello!")
     sUserName = input("Please enter your name: ").capitalize()
     print(f"Welcome to the women's soccer game, {sUserName}")
-    sUserAnswer = input("Would you like to play? ").upper()
+    return sUserName
+
+
+
+
+def playorno(Name):
+    sUserAnswer = input("Would you like to play? Yes, or No ").upper()
 
     # For readability
     print("\n")
     
     # Creates an if loop and shares the rules based on the user input. 
     if sUserAnswer == "YES":
+        play = True
         print("Great! The rules of the game are simple.") 
         print("\n")
         print("You will select a team to play as. You will also select your opponent, so choose wisely!")
         print("\n")
-        print(f'Good luck {sUserName}!')
+        print(f'Good luck {Name}!')
     else :
         print("Have a nice day!")
+        play = False
     # Returns the user name. 
-    return sUserName
+    return play
 
 # Stores the user name in a variable. 
-player_name = intro()
+
 
 
