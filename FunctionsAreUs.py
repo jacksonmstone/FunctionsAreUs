@@ -3,6 +3,7 @@ from functionOne import intro, playorno
 from Function3 import printTeams, getNumber
 from function4 import results, winloss
 from Function2 import second, gamesplayed
+from function5 import func5
 
 UserName = intro()
 
@@ -49,5 +50,6 @@ while play == 1:
             games = games - 1
             count = count + 1
             print('\n')
-        print(f"Your team: {myTeam} won {numWins} time(s)\n")
+        
+        print(func5(myTeam,numWins))
         play = second(UserName)
