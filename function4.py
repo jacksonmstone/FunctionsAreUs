@@ -12,7 +12,13 @@ def results (hometeam, awayteam):
     while ihomescore == iawayscore:
         ihomescore = random.randint(0,11)
         iawayscore = random.randint(0,11)
+    return ihomescore, iawayscore
+    
 
+
+
+
+def winloss(ihomescore, iawayscore):
     if ihomescore > iawayscore:
         sresults = "W"
 
