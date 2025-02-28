@@ -22,14 +22,7 @@ def second(playername):
 def gamesplayed(userinput):
     
     if userinput == 1:
-        int(input("how many games will you play this season? "))
-        gameon  = True
+        gamecount = int(input("how many games will you play this season? "))
     else:
         print("your team did not play any games this season")
-        gameon = False
-    return gameon
-
-
-
-
-
+    return gamecount
