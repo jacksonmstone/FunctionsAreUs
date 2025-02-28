@@ -13,11 +13,11 @@ UserName = intro()
 
 run = playorno(UserName)
 play = second(UserName)
+
 if play == 1:
     games = gamesplayed(play)
 
 
-for icount in range ():
     if run == True:
         #print out all the teams on my list
         print("Here are all the women's soccer teams for the 2025 season!")
