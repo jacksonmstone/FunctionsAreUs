@@ -17,10 +17,12 @@ if play == 1:
     games = gamesplayed(play)
 
 
-if run == True:
-    #print out all the teams on my list
-    print("Here are all the women's soccer teams for the 2025 season!")
-    printTeams(teams)
+for icount in range ():
+    if run == True:
+        #print out all the teams on my list
+        print("Here are all the women's soccer teams for the 2025 season!")
+        printTeams(teams)
+
 
 
     #get the number team we are looking at
@@ -43,6 +45,7 @@ if run == True:
         printTeams(teams)
 
 
+
         #get the number team we want to play
         print("What team would you like to play this season?")
         teamNum = getNumber(teams)
@@ -51,6 +54,7 @@ if run == True:
         job = winloss(myscore,awayscore)
         if job == "W":
             numWins = numWins + 1
+
 
         awayTeams[count] = [oppTeam,myscore,awayscore,job]
         teams.pop(teamNum)

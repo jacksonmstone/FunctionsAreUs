@@ -2,19 +2,34 @@
 # This program is the second function of A2
 
 # Display of menu and return choice. Store in variable and use this value to determine which function to call next.
-def second():
-    print(f' Ok, {player_name}, What would you like to do? (Input 1, 2, or 3)')
+def second(playername):
+    print(f' Ok, {playername}, What would you like to do? (Input 1 or 2)')
     bContinue = True
     
     while True:
         try :
-            userInput = int(input("1) Pick your team to play as \n2) Pick the team to play against \n3) Quit program\nInput here: "))
-            if userInput in [1, 2, 3]:
+            userInput = int(input("1) Start building your season \n2) Quit program\nInput here: "))
+            if userInput in [1, 2]:
                 bContinue = False
                 return userInput
             else:
                 print("Invalid number. Please try again.")
         except ValueError:
             print("Invalid Input. Please enter again")
+            return userInput
 
-user_choice = second()
+
+def gamesplayed(userinput):
+    
+    if userinput == 1:
+        int(input("how many games will you play this season? "))
+        gameon  = True
+    else:
+        print("your team did not play any games this season")
+        gameon = False
+    return gameon
+
+
+
+
+
